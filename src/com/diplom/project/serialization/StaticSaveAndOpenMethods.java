@@ -11,11 +11,10 @@ import com.diplom.project.table.model.MyTableModel;
 public class StaticSaveAndOpenMethods {
 	public static boolean setCancel;
 	
-	private String extension = ".mtm"; // расширение файлов
+	private String extension = ".mtm"; 
 	private    int    length = extension.length();
 	
 	
-	// **** метод чтения с файла ******
 	public DataTableSaver openMethods() {
 		DataTableSaver man = null;
 		JFileChooser fc = new JFileChooser();
@@ -48,7 +47,6 @@ public class StaticSaveAndOpenMethods {
 
 	}
 
-	// **** метод записи в файл *****
 	public void saveMethods(MyTableModel model) {
 		JFileChooser fc = new JFileChooser();
 		fc.setFileFilter(new FileFilter() {
